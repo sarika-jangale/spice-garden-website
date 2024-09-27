@@ -1,0 +1,468 @@
+/* Css code  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+body {
+  padding-top: 60px;
+}
+.navbar {
+  background-color: #1e1f1f; /* Dark background */
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-left: 15%;
+  color: rgb(235, 0, 0);
+  font-family: Charm;
+  font-size: 3vw;
+}
+
+.navbar-brand:hover {
+  color: #373737;
+}
+
+.nav-link {
+  color: #aeb9ab;
+}
+
+.nav-link:hover {
+  color: #e4e8e4;
+}
+
+.navbar-nav {
+  margin-right: 15%;
+}
+
+/* Custom style for navbar-toggler icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* .navbar-collapse.show .nav-link {
+  color: white; Toggler expanded: white text color */
+/* background-color: #010101;
+} */
+.hero-section {
+  background: url("../images/hero.jpg") no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  padding-top: 56px;
+
+  /* Reduce opacity */
+  position: relative;
+  text-align: center;
+}
+
+.hero-section h1 {
+  position: absolute;
+  left: 8%;
+  top: 15%;
+  font-size: 4vw;
+  font-family: Charm;
+  font-style: italic;
+  color: rgb(244, 244, 244);
+  word-spacing: 1.2rem;
+}
+
+.hero-section h3 {
+  position: absolute;
+  left: 9%;
+  top: 30%;
+  font-size: 2.4vw;
+  font-weight: 400;
+  color: #ffa600;
+  line-height: 1.3em;
+  letter-spacing: 0.3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dishes-row {
+  display: flex;
+  justify-content: space-around;
+  background-color: #343a40;
+  width: 100%;
+  padding: 7px 0;
+  position: absolute;
+  bottom: 0vw;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  /* margin: 0 5vw; */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap;
+            height: 35vh; */
+  /* Smaller height */
+}
+
+.dish {
+  margin: 10px;
+  text-align: center;
+  color: white;
+  flex: 1 1 120px;
+}
+
+.dish img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* about section  */
+.about-section {
+  padding: 1rem;
+}
+
+.img-fluid {
+  width: 30%;
+  height: 100%;
+  margin-top: 2vh;
+}
+
+.img-larger {
+  width: 50%;
+  height: 100%;
+  margin-top: 2vh;
+  padding: 1rem;
+}
+
+.img-smaller {
+  width: 40%;
+  height: 90%;
+  margin-top: 4vh;
+  padding: 1rem;
+}
+
+.heading_about {
+  font-family: Charm;
+  color: red;
+  text-align: center;
+  font-size: 3vw;
+  padding: 1vw;
+}
+
+/* catering section  */
+.catering-section {
+  padding: 5vw;
+  background-color: #eee;
+}
+.catering-section i {
+  font-size: 3vw;
+  margin-bottom: 2.5vh;
+  margin-top: 2.5vh;
+}
+.heading_catering {
+  color: red;
+  font-family: Charm;
+  font-size: 2.5rem;
+  padding: 1vw;
+}
+.para_catering {
+  display: flex;
+  /* justify-content: ; */
+  text-align: center;
+}
+
+/* menu section  */
+.menu-section {
+  padding: 2rem;
+  align-items: center;
+}
+.heading_menu {
+  font-family: Charm;
+  color: red;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.image {
+  height: 35vh;
+  width: 25vw;
+  margin-top: 2vh;
+}
+
+/* masterchef-section */
+
+.masterchef-section {
+  background-color: #343a40;
+  padding: 5px;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.chef-img {
+  text-align: center;
+  height: 90%;
+  width: 80%;
+  /* padding: 1vh; */
+}
+.masterchef-heading {
+  color: red;
+  font-family: Charm;
+  font-size: 2.5rem;
+  padding: 1vh;
+}
+.masterchef-section .row {
+  align-items: center;
+  margin-top: 5vh;
+}
+.masterchef-section h3 {
+  color: rgb(214, 206, 206);
+  /* font-weight: 100; */
+  font-family: Sofadi One;
+  text-transform: uppercase;
+}
+.masterchef-section h5 {
+  color: #aeb9ab;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin-top: 2px;
+}
+.social-links i {
+  color: #aeb9ab;
+  padding: 0.6vw;
+  font-size: 1.2rem;
+}
+
+/* book table  */
+.book-table-section {
+  background: url("../images/pizza.jpg") no-repeat center;
+  height: auto;
+  background-size: cover;
+}
+.card {
+  border-radius: 10px;
+}
+.recent-post-section .row {
+  display: flex;
+  padding: 1vw;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.recent-post-section img {
+  width: 80%;
+  height: 90%;
+  padding: 5px;
+  margin-top: 0.5vh;
+  object-fit: cover;
+}
+.recent-post-section h3 {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.748);
+}
+
+.testimony-section img {
+  height: auto;
+  width: 60%;
+  border-radius: 50%;
+}
+
+.icon i {
+  padding: 5px;
+  font-size: 1rem;
+  color: #aeb9ab;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 7vw;
+    left: 2%;
+    background-color: rgba(57, 37, 37, 0.5);
+    padding: 3.5vw;
+  }
+
+  .hero-section h3 {
+    font-size: 4.5vw;
+    left: 2%;
+    background-color: rgba(57, 37, 37, 0.5);
+    padding: 4.5vw;
+    margin-top: 3vh;
+  }
+
+  .dishes-row {
+    /* display: flex; */
+    height: 35vh;
+    /* Smaller height in mobile view */
+    flex-wrap: wrap;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+  }
+
+  .dish img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navbar-brand {
+    font-size: 4vw;
+  }
+
+  .img-smaller {
+    width: 50%;
+    height: 90%;
+    margin-top: 2vh;
+  }
+
+  .img-larger {
+    width: 50%;
+    height: 90%;
+  }
+
+  .heading_about {
+    margin-top: 2vh;
+    font-size: 2rem;
+  }
+  .image {
+    height: 35vh;
+    width: 40vw;
+  }
+  .masterchef-section {
+    height: auto;
+  }
+  .masterchef-section img {
+    height: 70%;
+    width: 60%;
+  }
+  .masterchef-section h3 {
+    font-size: 0.8rem;
+    padding-top: 2px;
+    margin-bottom: 0px;
+  }
+  .masterchef-section h5 {
+    font-size: 1rem;
+  }
+  .recent-post-section img {
+    width: 50%;
+    height: 70%;
+  }
+  .recent-post-section h3 {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .news-div input {
+    width: 70%;
+    border-radius: 0;
+  }
+  .news-div button {
+    width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 7vw;
+  }
+
+  .hero-section h1 {
+    font-size: 10vw;
+    left: 7%;
+    top: 5%;
+    color: #ffffff;
+    /* White text */
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    /* Adds shadow for contrast */
+    background-color: rgba(57, 37, 37, 0.5);
+    padding: 5vw;
+  }
+
+  .hero-section h3 {
+    font-size: 7vw;
+    background-color: rgba(57, 37, 37, 0.5);
+    padding: 8vw;
+    left: 7%;
+    color: #ffffff;
+    margin-top: -0.5vh;
+  }
+
+  .dishes-row {
+    height: 60vh;
+  }
+
+  .dish img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .about-section {
+    padding: 5px;
+    margin-top: 30vh;
+  }
+
+  .img-larger {
+    /* height: 5vh; */
+    margin-top: 2vh;
+    width: 50%;
+    height: 90%;
+  }
+
+  .img-smaller {
+    margin-top: 2vh;
+    width: 50%;
+    height: 90%;
+  }
+
+  .heading_about {
+    font-size: 2rem;
+    margin-top: 0vh;
+  }
+
+  .para_about {
+    text-align: justify;
+    margin: 0 1.5rem;
+  }
+
+  .para_about_no {
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+  }
+
+  .catering-section i {
+    font-size: 5vw;
+  }
+  .para_catering {
+    text-align: center;
+  }
+
+  .masterchef-section {
+    height: auto;
+  }
+  .masterchef-section img {
+    height: auto;
+    width: 50%;
+  }
+  .social-links i {
+    color: #aeb9ab;
+    padding-top: 0.2vw;
+    font-size: 0.8rem;
+  }
+  .book-table-section .card {
+    width: 90%; /* Adjust the width of the card */
+    margin: 0 auto; /* Center the card */
+  }
+  .book-table-section h2 {
+    font-size: 7vw !important;
+  }
+  .recent-post-section img {
+    width: 50%;
+    height: 70%;
+  }
+  .recent-post-section h3 {
+    font-size: 1rem;
+  }
+  .news-div input {
+    width: 100% !important;
+    border-radius: 0;
+  }
+  .news-div button {
+    width: 40%;
+  }
+}
